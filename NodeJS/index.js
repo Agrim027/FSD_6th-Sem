@@ -27,13 +27,18 @@
 // console.log(result)
 
 // Async
+// const fs=require('fs');
+// // fs.writeFile("./ad.txt","code is very good time pass",()=>{});
+// fs.readFile("./ad.txt","utf-8",(err,result)=>{
+//     if(err){
+//         console.log("Error",err)
+//     }
+//     else{
+//         console.log(result)
+//     }
+// })
+
+//    Append(Sync)
 const fs=require('fs');
-// fs.writeFile("./ad.txt","code is very good time pass",()=>{});
-fs.readFile("./ad.txt","utf-8",(err,result)=>{
-    if(err){
-        console.log("Error",err)
-    }
-    else{
-        console.log(result)
-    }
-})
+fs.appendFileSync("./ad.txt",'and i am happy');
+fs.appendFile("./ad.txt",'and i am happy',()=>{})
