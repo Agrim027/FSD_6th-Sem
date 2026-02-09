@@ -46,4 +46,4 @@ const fs=require('fs');
 fs.appendFileSync("./ad.txt",'and i am happy ');
 fs.appendFile("./ad.txt",'and i am happy',()=>{});
 
-    // fs.unlinkSync("./ad.txt");                         use to delete the file
+    // /fs.unlinkSync("./ad.txt");                          use to delete the file
