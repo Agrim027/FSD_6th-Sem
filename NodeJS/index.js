@@ -19,12 +19,14 @@
 // });
 // myserver.listen(8000,()=>console.log('server is running'))
 
+
 //   Sync
 // const fs=require('fs');
 // // fs.writeFileSync("./it-a.txt","I am student of It")
 // // fs.writeFileSync("./abes.txt","This is abes engineering college")
 // const result=fs.readFileSync("./it-a.txt","utf-8")
 // console.log(result)
+
 
 // Async
 // const fs=require('fs');
@@ -38,7 +40,10 @@
 //     }
 // })
 
+
 //    Append(Sync)
 const fs=require('fs');
-fs.appendFileSync("./ad.txt",'and i am happy');
-fs.appendFile("./ad.txt",'and i am happy',()=>{})
+fs.appendFileSync("./ad.txt",'and i am happy ');
+fs.appendFile("./ad.txt",'and i am happy',()=>{});
+
+    // fs.unlinkSync("./ad.txt");                         use to delete the file
